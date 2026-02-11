@@ -143,15 +143,15 @@ order = new CaramelSyrup(order);
 [Insert Decorator Pattern UML Diagram here]
 
 ```
-        ┌──��──────────┐
-        │   Coffee    │ (Interface)
-        ├─────────────┤
-        │+ getDescription()
-        │+ getCost()
-        └─────────────┘
+        ┌──��─────────────┐
+        │   Coffee          │ (Interface)
+        ├───────────────────┤
+        │+ getDescription() │
+        │+ getCost()        │
+        └───────────────────┘
              ▲
              │
-        ┌────┴────┐
+        ┌────┴─────┐
         │          │
     ┌───────────┐ ┌──────────────────┐
     │BlackCoffee│ │CoffeeDecorator   │
@@ -165,14 +165,14 @@ order = new CaramelSyrup(order);
            │Milk │ │    │     │        │
            └─────┘ │    │     │        │
           ┌────────┴┐   │     │        │
-          │CaramelSyrup│     │        │
+          │CaramelSyrup       │        │
           └──────────┘  │     │        │
         ┌───────────────┴┐    │        │
         │WhippedCream    │    │        │
         └────────────────┘    │        │
-      ┌────────────────────┐   │        │
-      │Extra Espresso Shot │   │        │
-      └────────────────────┘   │        │
+      ┌────────────────────┐  │        │
+      │Extra Espresso Shot │  │        │
+      └────────────────────┘  │        │
                             (More decorators...)
 ```
 
